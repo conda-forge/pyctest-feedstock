@@ -1,6 +1,6 @@
 {% set name = "pyctest" %}
-{% set version = "0.0.10" %}
-{% set sha256 = "28c6f154fd4953e72b42441015534a32250b265433628d232acc5befb969eed5" %}
+{% set version = "0.0.12" %}
+{% set sha256 = "db7b54439049fbbcfe77fc8ea38bd69a45833edd78d04af28c890001c373a884" %}
 
 package:
   name: {{ name|lower }}
@@ -11,7 +11,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1000
+  number: 0
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
   skip: true  # [win]
 
