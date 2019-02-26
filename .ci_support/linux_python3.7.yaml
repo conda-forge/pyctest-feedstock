@@ -1,19 +1,17 @@
-build_number_decrement:
-- '0'
 c_compiler:
 - gcc
 channel_sources:
-- conda-forge/label/gcc7,defaults
+- conda-forge,defaults
 channel_targets:
-- conda-forge gcc7
+- conda-forge main
 curl:
-- '7.59'
+- '7.64'
 cxx_compiler:
 - gxx
 docker_image:
 - condaforge/linux-anvil-comp7
 openssl:
-- 1.0.2
+- 1.1.1a
 pin_run_as_build:
   curl:
     max_pin: x
@@ -23,11 +21,4 @@ pin_run_as_build:
     min_pin: x.x
     max_pin: x.x
 python:
-- '3.6'
-zip_keys:
-- - c_compiler
-  - cxx_compiler
-  - channel_sources
-  - channel_targets
-  - docker_image
-  - build_number_decrement
+- '3.7'
